@@ -67,10 +67,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # not defined here b/c vbox creates this network behind the scenes
 
     # eth1, this will be OpenStacks's "management" network autoconfigured on vm by vbox
-    stackinabox.vm.network "private_network", ip: "192.168.27.100", adapter_ip: "192.168.27.1", netmask: "255.255.255.0", auto_config: true
+    stackinabox.vm.network "private_network", ip: "192.168.29.100", adapter_ip: "192.168.29.1", netmask: "255.255.255.0", auto_config: true
 
     # eth2, this will be OpenStack's "public" network configured on vm by stackinabox.sh script and bridged to OpenvSwitch on VM
-    stackinabox.vm.network "private_network", ip: "172.24.4.225", adapter_ip: "172.24.4.225", netmask: "255.255.255.0", auto_config: false
+    stackinabox.vm.network "private_network", ip: "172.26.4.225", adapter_ip: "172.26.4.225", netmask: "255.255.255.0", auto_config: false
 
     # Provider-specific configuration
     stackinabox.vm.provider "virtualbox" do |vb|

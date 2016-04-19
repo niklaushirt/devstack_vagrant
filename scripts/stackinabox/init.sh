@@ -150,7 +150,7 @@ iface eth2 inet manual
 
 auto br-ex
 iface br-ex inet static
-    address 172.24.4.2
+    address 172.26.4.2
     netmask 255.255.255.0
     up ip link set $IFACE promisc on
     down ip link set $IFACE promisc off

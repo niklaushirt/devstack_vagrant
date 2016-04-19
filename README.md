@@ -27,7 +27,7 @@ stackinabox [![Build Status](https://travis-ci.org/tpouyer/stackinabox.svg?branc
     - __NOTE:__ Running Linux? `vagrant/build.sh` the script will copy the `Personalization.dist` file for you and add a reasonable `$disk` value to the file.
   - Run vagrant:  
     `vagrant/build.sh`
-  - You can now open your browser to `http://192.168.27.100` to see the Horizon web console
+  - You can now open your browser to `http://192.168.29.100` to see the Horizon web console
     - You can login as demo user with:
       - username: `demo`
       - password: `labstack`
@@ -35,7 +35,7 @@ stackinabox [![Build Status](https://travis-ci.org/tpouyer/stackinabox.svg?branc
       - username: `admin`
       - password: `labstack`
   - You ssh into the vagrant machine using:  
-    `ssh vagrant@192.168.27.100`
+    `ssh vagrant@192.168.29.100`
     - password: `vagrant`
     - or you can use vagrant's passwordless ssh support:  
       `cd vagrant;vagrant ssh`
